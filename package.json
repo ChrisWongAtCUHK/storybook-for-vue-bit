@@ -29,8 +29,15 @@
     "vue": "^2.6.11"
   },
   "scripts": {
-	"lint": "eslint",
-	"lint:fix": "eslint --fix",
-	"storybook": "start-storybook"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "storybook": "start-storybook"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/bundlers/vue@2.6.20"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }
