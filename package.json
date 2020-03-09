@@ -27,5 +27,8 @@
   },
   "dependencies": {
     "vue": "^2.6.11"
+  },
+  "scripts": {
+	"storybook": "start-storybook"
   }
 }
