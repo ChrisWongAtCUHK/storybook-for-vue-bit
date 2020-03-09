@@ -1,0 +1,15 @@
+{
+  "name": "@bit/chriswongatcuhk.animation.animated-pika",
+  "version": "0.0.1",
+  "homepage": "https://bit.dev/chriswongatcuhk/animation/animated-pika",
+  "main": "dist/AnimatedPika.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/bundlers/vue@2.6.20"
+    }
+  }
+}

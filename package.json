@@ -6,13 +6,68 @@
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@storybook/vue": "^5.3.14",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
     "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "vue-loader": "^15.9.0",
     "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "ignorePatterns": [
+      "dist/*.*",
+      "dist/**/*.*"
+    ],
+    "rules": {
+      "comma-dangle": "error",
+      "comma-spacing": "error",
+      "eol-last": "error",
+      "func-call-spacing": "error",
+      "func-name-matching": "error",
+      "func-names": "error",
+      "func-style": "error",
+      "indent": "off",
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "newline-before-return": "error",
+      "no-alert": "error",
+      "no-empty-function": "error",
+      "no-lonely-if": "error",
+      "no-magic-numbers": "off",
+      "no-multiple-empty-lines": "error",
+      "no-tabs": "off",
+      "no-trailing-spaces": "error",
+      "no-undef-init": "error",
+      "no-undefined": "error",
+      "no-var": "error",
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "require-jsdoc": "error",
+      "semi": [
+        "error",
+        "never"
+      ],
+      "strict": "error",
+      "valid-jsdoc": "error"
+    }
   },
   "husky": {
     "hooks": {
@@ -26,12 +81,13 @@
     ]
   },
   "dependencies": {
+    "@bit/chriswongatcuhk.animation.animated-pika": "file:./components/animated-pika",
     "vue": "^2.6.11"
   },
   "scripts": {
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook --ci --port 6060"
   },
   "bit": {
     "env": {
