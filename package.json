@@ -11,6 +11,7 @@
     "babel-preset-vue": "^2.0.2",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "vue-loader": "^15.9.0",
@@ -87,7 +88,9 @@
   "scripts": {
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "storybook": "start-storybook --ci --port 6060"
+    "storybook": "start-storybook --ci --port 6060",
+    "build-storybook": "build-storybook",
+	  "deploy": "yarn build-storybook; gh-pages -d storybook-static"
   },
   "bit": {
     "env": {
